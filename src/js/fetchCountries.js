@@ -1,7 +1,6 @@
-const BASE_URL = 'https://restcountries.com/v3.1';
-
 function fetchCountries(name) {
-    return fetch(`https://restcountries.com/v3.1/name/${name}`).then(response => {
+    return fetch(`https://restcountries.com/v3.1/name/${name}?fields=name,capital,flags,population,languages`)
+        .then(response => {
     return response.json();
 })
 }

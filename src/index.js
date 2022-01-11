@@ -29,14 +29,14 @@ function toSelectionData(data) {
        function CountryCards (data) {
             return data.map((country, index, array) => {
                 if (array.length === 1) {
-                    return `<li class="list"><p class = "country-text">Country: <span class="span-text">${country.name.official}</span></p>
-              <p class = "country-text">Capital: <span class="span-text">${country.capital.join('')}</span></p>
+                    return `<li><p><div class = "country-name"><img class='flag-info' src="${country.flags.svg}" alt="flag" /><span class="span-name">${country.name.official}</span></div></p>
+              <p class = "country-text" >Capital: <span class="span-text">${country.capital.join('')}</span></p>
               <p class = "country-text">Population: <span class="span-text">${country.population}</span></p></li>
               <p class = "country-text">Language: <span class="span-text">${Object.values(country.languages).join(', ')}</span></p>              
-              <div class = "country-text">Flag: <img class='flag' src="${country.flags.svg}" alt="flag" /></div>`
+              `
                 } else {
-                    return `<li class="list short-list">
-                <div><img class='flag' src="${country.flags.svg}" alt="flag" /></div>
+                    return `<li class="short-list">
+                <div><img class='flag-list' src="${country.flags.svg}" alt="flag" /></div>
                 <p><span class="name-official">${country.name.official}</span></p>
                 </li>`;
                 }

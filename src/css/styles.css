@@ -7,6 +7,8 @@ body {
     'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(../images/konturnaya-karta-mira.jpg);
+  background-size: cover;
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
@@ -19,7 +21,23 @@ body {
   margin-bottom: 16px;
 }
 
-.list {
+.country-name {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  font-size: 40px;
+  color: #fafafa;
+}
+
+.flag-info {
+  width: 100px;
+  height: 50px;
+  margin-right: 15px;
+
+  margin-top: 7px;
+}
+
+.country-list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -33,14 +51,27 @@ body {
 .span-text {
   font-size: 15px;
   font-weight: normal;
+  color: #fafafa;
 }
 
-.flag {
-  width: 40px;
-  height: 20px;
+.flag-list {
+  margin-right: 15px;
+  margin-top: 7px;
+  width: 50px;
+  height: 30px;
 }
 
 .short-list {
   display: flex;
-  vertical-align: middle;
+  align-items: center;
+  margin-left: 0;
+}
+
+.form {
+  margin-left: 30px;
+}
+
+.name-official {
+  color: #fafafa;
+  font-weight: bold;
 }

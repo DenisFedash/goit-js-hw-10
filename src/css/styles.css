@@ -44,12 +44,13 @@ body {
 }
 
 .country-text {
-  font-size: 15px;
+  font-size: 25px;
   font-weight: bold;
 }
 
 .span-text {
-  font-size: 15px;
+  font-size: 20px;
+  margin-left: 15px;
   font-weight: normal;
   color: #fafafa;
 }
